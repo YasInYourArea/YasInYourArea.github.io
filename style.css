@@ -1,0 +1,612 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('img/paws.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 20%;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+html{
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: .5s;
+}
+.sidebar header{
+  font-size: 400%;
+  font-family: 'Fredoka One';
+  color: #fff;
+  text-align: center;
+  line-height: 200%;
+  user-select: none;
+}
+
+.sidebar ul a{
+  display: block;
+  font-family: 'Fredoka One';
+  height: 100%;
+  width: 100%;
+  line-height: 200%;
+  font-size: 200%;
+  padding-left: 10%;
+  box-sizing: border-box;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: .5s;
+}
+
+.sidebar ul li:hover a{
+  padding-left: 15%;
+}
+
+.sidebar .closebtn{
+ position: absolute;
+ top: 0;
+ right: 10%;
+ font-size: 300%;
+ margin-left: 50px;
+ color: white;
+}
+
+.openbtn {
+  font-size: 200%;
+  cursor: pointer;
+  color: white;
+  padding: 2% 2%;
+  border: none;
+}
+
+.title h1{
+  font-size:400%;
+  font-family: 'Fredoka One', 'Indie Flower';
+  text-align: center;
+  color: #FFFFFF;
+  width: 50%;
+  border-radius: 40px;
+  margin: 0 25% 2%;
+  opacity: 0.9;
+  user-select: none;
+}
+
+.undertitle h3{
+  font-size:150%;
+  font-family: 'Indie Flower', 'Roboto Mono';
+  text-align: center;
+  background-color: #fff;
+  width: 60%;
+  margin: 0 20% 5%;
+  user-select: none;
+}
+
+.gallery1 {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery1 img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: bottom;
+  padding: 0 10px 20px;
+  border-radius: 40px;
+}
+
+.gallery2 {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery2 img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: bottom;
+  padding: 0 10px 20px;
+  border-radius: 40px;
+}
+
+.gallery3 {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery3 img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: bottom;
+  padding: 0 10px 20px;
+  border-radius: 40px;
+}
+
+.footer {
+  opacity: 0.9;
+  width: 100%;
+  padding: 80px;
+  margin-top: 40px;
+  color: #fff;
+  font-family: "Nunito", "Roboto Mono";
+}
+
+/* Main Page*/
+
+.sidebarpnk {
+background-color: #E193BF;
+}
+
+.sidebarpnk header {
+ background-color: #F7B1D9;
+}
+
+.sidebarpnk ul a {
+color: #ffffff;
+}
+
+.sidebarpnk ul li:hover a{
+  background-color: #F7B1D9;
+}
+
+.openbtnpnk {
+  background-color: #E193BF;
+}
+
+.openbtnpnk:hover {
+  background-color: #F7B1D9;
+}
+
+.titlepnk h1{
+background-color:#E193BF;
+}
+
+.footerpnk{
+  background-color: #F7B1D9;
+}
+
+/* Black cats */
+
+.sidebarblck {
+background-color: #111;
+}
+
+.sidebarblck header {
+ background-color: #292d33;
+}
+
+.sidebarblck ul a {
+color: #ffffff;
+}
+
+.sidebarblck ul li:hover a{
+  background-color: #292d33;
+}
+
+.openbtnblck {
+  background-color: #111;
+}
+
+.openbtnblck:hover {
+  background-color: #292d33;
+}
+
+.titleblck h1{
+background-color:#111;
+}
+
+.footerblck1{
+  background-color: #292d33;
+}
+
+.footerblck{
+  background-color: #292d33;
+  margin-top: 50%;
+}
+
+.pic{
+display: flex;
+justify-content: center;
+align-content: center;
+}
+
+.pic img{
+  width: 500px;
+  height: 600px;
+  margin-left: 20%;
+  margin-top: 8%;
+  margin-right: 10%;
+  border-radius: 20px;
+}
+
+.picblck img{
+  border: 5px solid black;
+}
+
+.pic div h1{
+  text-align: center;
+  font-size: 600%;
+  padding-left: 30%;
+  margin-top: 15%;
+  font-family: "Bebas Neue";
+  margin-right: 10%;
+}
+
+.pic div h3{
+  padding-left: 30%;
+  padding-right: 10%;
+  margin-top: 2%;
+  font-family: "Fredoka One";
+  margin-right: 0;
+  text-align: center;
+}
+
+/* White cats */
+
+.sidebarwht {
+background-color: #b5bbc4;
+}
+
+.sidebarwht header {
+ background-color: #dce1e8;
+}
+
+.sidebarwht ul a {
+color: #fff;
+}
+
+.sidebarwht ul li:hover a{
+  background-color: #dce1e8;
+}
+
+.openbtnwht {
+  background-color: #b5bbc4;
+}
+
+.openbtnwht:hover {
+  background-color: #dce1e8;
+}
+
+.titlewht h1{
+background-color:#b5bbc4;
+}
+
+.footerwht{
+  background-color: #dce1e8;
+  margin-top: 800px;
+}
+
+.footerwht1{
+  background-color: #dce1e8;
+}
+
+.picwht img{
+  border: 5px solid white;
+}
+
+/* Gray cats */
+
+.sidebargry {
+  background-color: #55585c;
+}
+
+.sidebargry header {
+  background-color: #7c8187;
+}
+
+.sidebargry ul a {
+  color: #fff;
+}
+
+.sidebargry ul li:hover a{
+  background-color: #7c8187;
+}
+
+.openbtngry {
+  background-color: #55585c;
+}
+
+.openbtngry:hover {
+  background-color: #7c8187;
+}
+
+.titlegry h1{
+  background-color:#55585c;
+}
+
+.footergry1{
+  background-color: #55585c;
+}
+
+.footergry{
+  background-color: #55585c;
+  margin-top: 800px;
+
+}
+
+.picgry img{
+  border: 5px solid gray;
+}
+
+/* Ginger cats */
+
+.sidebargngr {
+  background-color: #bd7b2b;
+}
+
+.sidebargngr header {
+  background-color: #d49e5d;
+}
+
+.sidebargngr ul a {
+  color: #fff;
+}
+
+.sidebargngr ul li:hover a{
+  background-color: #d49e5d;
+}
+
+.openbtngngr {
+  background-color: #bd7b2b;
+}
+
+.openbtngngr:hover {
+  background-color: #d49e5d;
+}
+
+.titlegngr h1{
+  background-color:#bd7b2b;
+}
+
+.footergngr1{
+  background-color: #d49e5d;
+}
+
+.footergngr{
+  background-color: #d49e5d;
+  margin-top: 800px;
+}
+
+.picgngr img{
+  border: 5px solid orange;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+
+.sidebar{
+  width: 100%;
+}
+.openbtn{
+  padding: 4% 4%;
+}
+.title h1{
+  font-size:300%;
+  width: 80%;
+  margin: 0 10% 2%;
+}
+.undertitle h3{
+  width: 80%;
+  margin: 0 10% 5%;
+}
+.gallery1 {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery1 img{
+  width: 500px;
+  height: 500px;
+}
+.gallery2 img{
+  width: 500px;
+  height: 500px;
+}
+.gallery3 img{
+  width: 500px;
+  height: 500px;
+}
+
+.pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width:100%;
+}
+
+body {
+  width:100%;
+}
+
+html {
+  width: 100%;
+}
+.pic img{
+  width: 500px;
+  height: 600px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border-radius: 20px;
+  /*display: block;*/
+}
+.pic div h1{
+  text-align: center;
+  font-size: 600%;
+  padding-left: 0%;
+  /*display: block;*/
+  justify-content: center;
+  align-content: center;
+}
+
+.pic div{
+  align-content: center;
+  justify-content: center;
+}
+.pic div h3{
+  font-family: "Fredoka One";
+  width: 100%;
+  padding-left: 0%;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  /*display: block;*/
+}
+.footerblck{
+  margin-top: 200%;
+}
+.footer{
+  padding: 10%;
+}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 499px) {
+
+
+.sidebar{
+  width: 100%;
+}
+.sidebar header{
+  font-size: 300%;
+}
+.sidebar ul a{
+  font-size: 250%;
+}
+.openbtn{
+  padding: 4% 4%;
+}
+.title h1{
+  width: 80%;
+  margin: 0 10% 2%;
+  font-size: 200%;
+}
+.undertitle h3{
+  font-size: 70%;
+  width: 80%;
+  margin: 0 10% 5%;
+}
+.gallery1 {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery1 img{
+  width: 300px;
+  height: 300px;
+}
+.gallery2 img{
+  width: 300px;
+  height: 300px;
+}
+.gallery3 img{
+  width: 300px;
+  height: 300px;
+}
+.footer{
+  padding: 10%;
+}
+.footerblck{
+  margin-top: 170%;
+}
+.pic img{
+  width: 300px;
+  height: 400px;
+  margin-right: 5%;
+  margin-left: 5%;
+  justify-content: center;
+}
+.pic div h1{
+  text-align: center;
+  font-size: 400%;
+  padding-left: 0%;
+  padding-top: 20%;
+  font-family: "Bebas Neue";
+  width: 100%;
+  margin-top: 90%;
+}
+.pic div h3{
+  padding-left: 0%;
+  margin-top: 5%;
+  font-family: "Fredoka One";
+  margin-right: 0%;
+  width: 100%;
+  text-align: center;
+}
+}
+
+@media only screen and (max-width: 299px) {
+
+.sidebar{
+    width: 100%;
+}
+.sidebar .closebtn{
+  font-size: 20px;
+}
+.sidebar header{
+  font-size: 200%;
+}
+.sidebar ul a{
+  font-size: 170%;
+}
+.openbtn{
+  font-size: 100%;
+  padding: 4% 4%;
+}
+.title h1{
+  width: 80%;
+  margin: 0 10% 2%;
+  font-size: 100%;
+}
+.undertitle h3{
+  font-size: 70%;
+  width: 80%;
+  margin: 0 10% 5%;
+}
+.gallery1 {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery1 img{
+  width: 200px;
+  height: 200px;
+}
+.gallery2 img{
+  width: 200px;
+  height: 200px;
+}
+.gallery3 img{
+  width: 200px;
+  height: 200px;
+}
+.footer{
+  padding: 10%;
+}
+}

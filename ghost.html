@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Ghost</title>
+
+<link type="image/ico" href="img/icon.ico" rel="icon">
+
+<link href='style.css' rel='stylesheet'>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Square+Peg&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+</head>
+
+<body onload="closeNav()">
+
+  <div id="mySidebar" class="sidebar sidebarwht">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <header> Cats </header>
+      <ul>
+        <li><a href='blackcats.html'>Black Cats</a></li>
+        <li><a href='whitecats.html'>Return</a></li>
+        <li><a href='graycats.html'>Gray Cats</a></li>
+        <li><a href='gingercats.html'>Ginger Cats</a></li>
+      </ul>
+  </div>
+
+  <div id="main">
+    <button class="openbtn openbtnwht" onclick="openNav()">&#9776;</button>
+  </div>
+
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "50%";
+    document.getElementById("main").style.marginLeft = "50%";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+
+  <div class= "picwht pic">
+  <div>
+    <img src="img/whitecat2.jpeg">
+  </div>
+  <div>
+    <h1> This is Ghost </h1> <br> <h3> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum nec elit in suscipit. Donec vel blandit ipsum, eu mollis risus." </h3>
+  </div>
+  </div>
+
+</body>
+<br>
+<footer class="footer footerwht">
+  <a> All rights reserved to FindYourCat - 2022 </a>
+</footer>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Find Your Cat</title>
+
+<link type="image/ico" href="img/icon.ico">
+
+<link href='style.css' rel='stylesheet'>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+</head>
+
+<body onload="closeNav()" >
+
+  <div id="mySidebar" class="sidebar sidebarpnk">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <header> Cats </header>
+      <ul>
+        <li><a href='blackcats.html'>Black Cats</a></li>
+        <li><a href='whitecats.html'>White Cats</a></li>
+        <li><a href='graycats.html'>Gray Cats</a></li>
+        <li><a href='gingercats.html'>Ginger Cats</a></li>
+      </ul>
+  </div>
+
+  <div id="main">
+    <button class="openbtn openbtnpnk" onclick="openNav()">&#9776;</button>
+  </div>
+
+  <div class='title titlepnk'>
+    <h1> Find Your Cat <br> /ᐠ｡‸｡ᐟ\</h1>
+  </div>
+
+  <div class='undertitle'>
+    <h3> The only website where you can find cute cat photos with an irrelevant story! </h3>
+  </div>
+
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "20%";
+    document.getElementById("main").style.marginLeft = "20%";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+
+  </script>
+
+  <div class="gallery1">
+    <img src="img/intropage1.jpeg">
+    <img src="img/intropage2.jpeg">
+    <img src="img/intropage3.jpeg">
+  </div>
+  <br>
+  <div class="gallery2">
+    <img src="img/intropage4.jpeg">
+    <img src="img/intropage6.jpeg">
+    <img src="img/intropage5.jpeg">
+  </div>
+  <br>
+  <div class="gallery3">
+    <img src="img/intropage7.jpeg">
+    <img src="img/intropage8.jpeg">
+    <img src="img/intropage9.jpeg">
+  </div>
+
+</body>
+
+<footer class="footer footerpnk">
+  <a> All rights reserved to FindYourCat - 2022 </a>
+</footer>
+
+</html>

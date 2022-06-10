@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>White Cats</title>
+
+<link type="image/ico" href="img/icon.ico" rel="icon">
+
+<link href='style.css' rel='stylesheet'>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+</head>
+
+<body onload="closeNav()">
+
+  <div id="mySidebar" class="sidebar sidebarwht">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <header> Cats </header>
+      <ul>
+        <li><a href='blackcats.html'>Black Cats</a></li>
+        <li><a href='index.html'>Return</a></li>
+        <li><a href='graycats.html'>Gray Cats</a></li>
+        <li><a href='gingercats.html'>Ginger Cats</a></li>
+      </ul>
+  </div>
+
+  <div id="main">
+    <button class="openbtnwht openbtn" onclick="openNav()">&#9776;</button>
+  </div>
+
+  <div class='titlewht title'>
+    <h1> White Cats <br> ✧/ᐠ-ꞈ-ᐟ\</h1>
+  </div>
+
+  <div class="gallery1">
+  <a href="cotton.html">
+    <img src="img/whitecat1.jpeg">
+  </a>
+  <a href="ghost.html">
+    <img src="img/whitecat2.jpeg">
+  </a>
+  <a href="tofu.html">
+    <img src="img/whitecat3.jpeg">
+  </a>
+  </div>
+  <br>
+  <div class="gallery2">
+  <a href="mousse.html">
+    <img src="img/whitecat5.jpeg">
+  </a>
+  <a href="steffie.html">
+    <img src="img/whitecat9.jpeg">
+  </a>
+  <a href="casper.html">
+    <img src="img/whitecat6.jpeg">
+  </a>
+  </div>
+  <br>
+  <div class="gallery3">
+  <a href=peppermint.html>
+    <img src="img/whitecat7.jpeg">
+  </a>
+  <a href="frost.html">
+    <img src="img/whitecat8.jpeg">
+  </a>
+  <a href="polarbear.html">
+    <img src="img/whitecat4.jpeg">
+  </a>
+  </div>
+
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "20%";
+    document.getElementById("main").style.marginLeft = "20%";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+
+</body>
+
+<footer class="footer footerwht1">
+  <a> All rights reserved to FindYourCat - 2022 </a>
+</footer>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Gray Cats</title>
+
+<link type="image/ico" href="img/icon.ico" rel="icon">
+
+<link href='style.css' rel='stylesheet'>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+</head>
+
+<body onload="closeNav()">
+
+  <div id="mySidebar" class="sidebar sidebargry">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <header> Cats </header>
+      <ul>
+        <li><a href='blackcats.html'>Black Cats</a></li>
+        <li><a href='whitecats.html'>White Cats</a></li>
+        <li><a href='index.html'>Return</a></li>
+        <li><a href='gingercats.html'>Ginger Cats</a></li>
+      </ul>
+  </div>
+
+  <div id="main">
+    <button class="openbtn openbtngry" onclick="openNav()">&#9776;</button>
+  </div>
+
+  <div class='titlegry title'>
+    <h1> Gray Cats <br> /ᐠ｡▿｡ᐟ\</h1>
+  </div>
+
+  <div class="gallery1">
+  <a href="smudge.html">
+    <img src="img/graycat1.jpeg">
+  </a>
+  <a href="cinder.html">
+    <img src="img/graycat2.jpeg">
+  </a>
+  <a href="aristotle.html">
+    <img src="img/graycat3.jpeg">
+  </a>
+  </div>
+  <br>
+  <div class="gallery2">
+  <a href="dusty.html">
+    <img src="img/graycat4.jpeg">
+  </a>
+  <a href="ash.html">
+    <img src="img/graycat5.jpeg">
+  </a>
+  <a href="dusky.html">
+    <img src="img/graycat6.jpeg">
+  </a>
+  </div>
+  <br>
+  <div class="gallery3">
+  <a href=stormy.html>
+    <img src="img/graycat8.jpeg">
+  </a>
+  <a href="shadow.html">
+    <img src="img/graycat7.jpeg">
+  </a>
+  <a href="tabby.html">
+    <img src="img/graycat9.jpeg">
+  </a>
+  </div>
+
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "20%";
+    document.getElementById("main").style.marginLeft = "20%";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+
+</body>
+
+<footer class="footer footergry1">
+  <a> All rights reserved to FindYourCat - 2022 </a>
+</footer>
+
+</html>
